@@ -10,9 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OxyPlot.Pdf</RootNamespace>
     <AssemblyName>OxyPlot.Pdf</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,17 +22,15 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Output\NET45\</OutputPath>
+    <OutputPath>..\..\Output\NET40\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Output\NET45\OxyPlot.Pdf.XML</DocumentationFile>
-    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>..\..\Output\NET40\OxyPlot.Pdf.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -69,13 +67,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OxyPlot\OxyPlot.csproj">
-      <Project>{87F519B8-5A2F-48C6-AD53-C5F13A82EA6B}</Project>
-      <Name>OxyPlot</Name>
-    </ProjectReference>
+    <None Include="OxyPlot.Pdf.snk" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="OxyPlot.Pdf.snk" />
+    <ProjectReference Include="..\OxyPlot\OxyPlot_NET40.csproj">
+      <Project>{87f519b8-5a2f-48c6-ad53-c5f13a82ea6b}</Project>
+      <Name>OxyPlot_NET40</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
