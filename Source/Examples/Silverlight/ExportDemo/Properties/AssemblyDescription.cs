@@ -1,10 +1,10 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="AssemblyInfo.cs" company="OxyPlot">
+// <copyright file="AssemblyDescription.cs" company="OxyPlot">
 //   Copyright (c) 2014 OxyPlot contributors
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
 using System.Reflection;
 
-[assembly: AssemblyTitle("OxyPlot Silverlight Sparkline Demo")]
+[assembly: AssemblyTitle("OxyPlot Silverlight ExportDemo")]
 [assembly: AssemblyDescription("")]
